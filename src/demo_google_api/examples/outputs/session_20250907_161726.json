@@ -1,0 +1,17 @@
+{
+  "timestamp": "20250907_161726",
+  "prompt": "change her suit to cute anime suit",
+  "parameters": {
+    "temperature": 0.4,
+    "top_p": 0.95,
+    "top_k": 50,
+    "max_tokens": 1024,
+    "seed": 42
+  },
+  "text_output": "",
+  "num_input_images": 1,
+  "input_images": [
+    "outputs/input_20250907_161726_1.png"
+  ],
+  "output_image": "outputs/generated_20250907_161726.png"
+}

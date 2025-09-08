@@ -6,6 +6,6 @@ dist/
 wheels/
 *.egg-info
 .env
-
+.gradio
 # Virtual environments
 .venv

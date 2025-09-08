@@ -1,0 +1,18 @@
+{
+  "timestamp": "20250907_172739",
+  "prompt": "change the girl in the suit in the style of the second image make her facial expression similar to second image",
+  "parameters": {
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "top_k": 50,
+    "max_tokens": 1024,
+    "seed": 42
+  },
+  "text_output": "",
+  "num_input_images": 2,
+  "input_images": [
+    "outputs/input_20250907_172739_1.png",
+    "outputs/input_20250907_172739_2.png"
+  ],
+  "output_image": "outputs/generated_20250907_172739.png"
+}

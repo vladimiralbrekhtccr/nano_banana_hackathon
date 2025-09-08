@@ -1,0 +1,67 @@
+# uv run mkdocs serve
+site_name: Nano Banana Hackathon
+site_description: Documentation for Nano Banana Hackathon project using Gemini 2.5 Flash Image
+site_author: Vladimir Albrekht
+
+nav:
+  - Home: index.md
+  - About: about/about.md
+  - Getting Started:
+    - Overview: getting-started.md
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+  - API Reference:
+    - Overview: api-reference.md
+    - Gemini API: api-reference/gemini.md
+    - Image Processing: api-reference/image-processing.md
+  - Examples:
+    - Overview: examples.md
+    - Basic Usage: examples/basic.md
+    - Advanced Features: examples/advanced.md
+    - Video Generation: examples/video.md
+  - Contributing: contributing.md
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+  custom_dir: docs/overrides
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+
+dev_addr: '127.0.0.1:7777'
